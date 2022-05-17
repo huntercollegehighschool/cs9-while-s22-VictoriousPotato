@@ -12,3 +12,12 @@ Enter a number or enter 0 to stop: 0
 Product: 60
 
 '''
+num = int(input("Enter a number or enter 0 to stop:"))
+total = 0
+divisor = 0
+while num != 0:
+  total = total + num
+  divisor = divisor + 1
+  num = int(input("Enter a number or enter 0 to stop:"))
+total = total / divisor
+print("Average:", total)
