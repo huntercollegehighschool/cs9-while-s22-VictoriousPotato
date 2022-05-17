@@ -13,11 +13,10 @@ Product: 60
 
 '''
 num = int(input("Enter a number or enter 0 to stop:"))
-total = 0
-divisor = 0
+if num != 0:
+  total = 1
 while num != 0:
-  total = total + num
-  divisor = divisor + 1
+  total = total * num
   num = int(input("Enter a number or enter 0 to stop:"))
-total = total / divisor
-print("Average:", total)
+  
+print("Product:", total)
